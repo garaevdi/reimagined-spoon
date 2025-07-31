@@ -24,3 +24,5 @@ dnf5 install -y pipewire gnome-keyring-pam gcr xdg-desktop-portal-gtk xdg-deskto
 
 systemctl enable podman.socket
 systemctl enable greetd
+
+rsync -rvK /ctx/system_files/ /
