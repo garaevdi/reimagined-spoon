@@ -11,7 +11,7 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf5 install -y --setopt=install_weak_deps=false niri fastfetch dmenu-wayland nautilus ptyxis greetd tuigreet
-dnf5 install -y pipewire gnome-keyring xdg-desktop-portal-gtk xdg-desktop-portal-gnome gnome-online-accounts gnome-online-accounts-gtk
+dnf5 install -y pipewire gnome-keyring-pam gcr xdg-desktop-portal-gtk xdg-desktop-portal-gnome gnome-online-accounts gnome-online-accounts-gtk
 
 # Use a COPR Example:
 #
