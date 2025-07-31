@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y --setopt=install_weak_deps=false niri fastfetch dmenu-wayland nautilus ptyxis greetd tuigreet
+dnf5 install -y --setopt=install_weak_deps=false niri fastfetch nautilus ptyxis greetd tuigreet fuzzel desktop-file-utils
 dnf5 install -y pipewire gnome-keyring-pam gcr xdg-desktop-portal-gtk xdg-desktop-portal-gnome gnome-online-accounts gnome-online-accounts-gtk
 
 # Use a COPR Example:
