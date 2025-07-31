@@ -2,11 +2,15 @@
 FROM scratch AS ctx
 COPY build_files /
 
+
+FROM ${BASE_IMAGE}:${TAG_VERSION} AS oikos
+COPY system_files/etc /etc
+
 # Base Image
 # FROM ghcr.io/ublue-os/bazzite:stable
 
 ## Other possible base images include:
-FROM ghcr.io/ublue-os/silverblue-nvidia:latest
+FROM ghcr.io/ublue-os/base-nvidia:latest
 # FROM ghcr.io/ublue-os/bluefin-nvidia:stable
 # 
 # ... and so on, here are more base images
